@@ -4,6 +4,7 @@
   align-items: center;
   height: 80vh;
   margin-left: 140px;
+  justify-content: space-between;
 
   &__heading {
     display: inline-block;
@@ -42,12 +43,35 @@
     transform: translate(2px, 2px);
     box-shadow: 0px 1px $primary-color, 0px 1px $secondary-color;
   }
+
+  // Social media icons
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    align-items: center;
+
+    font-size: 24px;
+
+    &__icon {
+      margin-top: 10px;
+      color: $tertiary-color;
+      transition: 0.2s;
+    }
+    &__icon:hover {
+      color: $secondary-color;
+    }
+  }
 }
 
 // Scroll down
 .scroll-down {
+  display: flex;
   position: absolute;
+  bottom: 70px;
   transform: rotate(90deg);
+  align-items: center;
 
   &__link {
     text-decoration: none;
@@ -58,23 +82,6 @@
     height: 40px;
     width: 40px;
     color: $secondary-color;
-    margin-left: 15px;
-  }
-}
-
-// Social media icons
-
-.social {
-  position: absolute;
-  right: 5%;
-  bottom: 50%;
-  display: flex;
-  flex-direction: column;
-
-  color: $tertiary-color;
-  font-size: 24px;
-
-  &__icon {
-    margin-top: 10px;
+    margin-left: 25px;
   }
 }
