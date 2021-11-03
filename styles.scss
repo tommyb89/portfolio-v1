@@ -1,6 +1,7 @@
 @import "./sass/abstracts/_variables";
 @import "./sass/base/_typography";
 @import "./sass/components/_button";
+@import "./sass/components/scroll-down";
 @import "./sass/layout/_form";
 @import "./sass/layout/_navigation";
 @import "./sass/pages/_about";
@@ -17,4 +18,5 @@
 body {
   background-color: $primary-color;
   font-family: $primary-font;
+  padding: 0 50px;
 }

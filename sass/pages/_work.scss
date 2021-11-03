@@ -1,0 +1,84 @@
+.work {
+  height: 85vh;
+  color: $tertiary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 140px;
+
+  &__heading {
+    margin-bottom: 30px;
+    padding: 3px 0px 0px 7px;
+    border-top: 2px solid $secondary-color;
+    border-left: 2px solid $secondary-color;
+    width: 300px;
+  }
+  &__article {
+    display: flex;
+    justify-content: space-between;
+
+    &-description {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &-description h2 {
+    }
+    &-description h3 {
+      font-style: italic;
+      font-weight: 200;
+    }
+    &-description p {
+    }
+
+    &-card {
+      position: relative;
+      top: -100px;
+      right: 80px;
+      height: 400px;
+      width: 500px;
+      background-color: $tertiary-color;
+      border-radius: 10px;
+      border: 4px solid $secondary-color;
+      transition: 0.2s;
+    }
+
+    &-card:hover {
+      box-shadow: 6px 7px $primary-color, 7px 8px 0 1px $secondary-color;
+    }
+  }
+}
+
+.page {
+  display: inline;
+  font-size: 44px;
+  &-no {
+    color: $secondary-color;
+  }
+}
+
+// Arrows - slider
+
+.arrow-left {
+  position: absolute;
+  transform: translateY(-50%);
+  left: 100px;
+  font-size: 30px;
+}
+.arrow-right {
+  position: absolute;
+  transform: translateY(-50%);
+  right: 100px;
+  font-size: 30px;
+}
+
+// Tech stack icons
+.tech-stack {
+  margin-top: 30px;
+
+  &__icon {
+    margin-right: 10px;
+    height: 30px;
+  }
+}

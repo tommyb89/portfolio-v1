@@ -1,0 +1,16 @@
+.experience {
+  height: 90vh;
+  color: $tertiary-color;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  margin: 0 140px;
+
+  &__heading {
+    margin-bottom: 30px;
+    padding: 3px 0px 0px 7px;
+    border-top: 2px solid $secondary-color;
+    border-left: 2px solid $secondary-color;
+    width: 300px;
+  }
+}
