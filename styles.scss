@@ -1,0 +1,20 @@
+@import "./sass/abstracts/_variables";
+@import "./sass/base/_typography";
+@import "./sass/components/_button";
+@import "./sass/layout/_form";
+@import "./sass/layout/_navigation";
+@import "./sass/pages/_about";
+@import "./sass/pages/_work";
+@import "./sass/pages/_experience";
+@import "./sass/pages/_contact.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary-color;
+  font-family: $primary-font;
+}

@@ -1,0 +1,80 @@
+.hero {
+  color: $tertiary-color;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  margin-left: 140px;
+
+  &__heading {
+    display: inline-block;
+    &-title {
+      font-size: 64px;
+      font-weight: 200;
+    }
+    &-name {
+      font-size: 72px;
+      font-weight: 400;
+    }
+  }
+  &__subheading {
+    margin-top: 45px;
+    font-size: 18px;
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  &__button {
+    margin-top: 45px;
+    width: 280px;
+    height: 60px;
+    font-size: 24px;
+    border: 4px solid $secondary-color;
+    border-radius: 10px;
+    float: right;
+    transition: 0.2s;
+  }
+
+  &__button:hover {
+    box-shadow: 6px 7px $primary-color, 7px 8px 0 1px $secondary-color;
+  }
+
+  &__button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 1px $primary-color, 0px 1px $secondary-color;
+  }
+}
+
+// Scroll down
+.scroll-down {
+  position: absolute;
+  transform: rotate(90deg);
+
+  &__link {
+    text-decoration: none;
+    color: $tertiary-color;
+  }
+  &__icon {
+    transform: rotate(-135deg);
+    height: 40px;
+    width: 40px;
+    color: $secondary-color;
+    margin-left: 15px;
+  }
+}
+
+// Social media icons
+
+.social {
+  position: absolute;
+  right: 5%;
+  bottom: 50%;
+  display: flex;
+  flex-direction: column;
+
+  color: $tertiary-color;
+  font-size: 24px;
+
+  &__icon {
+    margin-top: 10px;
+  }
+}
