@@ -12,6 +12,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Tomasz Bielasik</title>
   </head>
@@ -68,16 +75,20 @@
 
     <!-- Scroll down -->
     <aside class="scroll-down">
-      <a class="scroll-down__link" href="#work">see more</a
-      ><i class="scroll-down__icon far fa-arrow-alt-circle-right fa-3"></i>
-
-      <!-- <i class="scroll-down__icon fa-solid fa-angles-down fa-3x"></i> -->
+      <a class="scroll-down__link" href="#work">see more</a>
+      <i class="scroll-down__icon far fa-arrow-alt-circle-right fa-3"></i>
     </aside>
 
     <!-- Main -->
     <main>
       <!-- Work -->
       <section class="work">
+        <!-- Scroll down -->
+        <aside class="scroll-up">
+          <i class="scroll-up__icon far fa-arrow-alt-circle-right fa-3"></i>
+          <a class="scroll-up__link" href="#work">go back</a>
+          
+        </aside>
         <div class="work__heading">
           <h1 class="page">
             0<span class="page-no">2</span>. <br />
@@ -88,7 +99,7 @@
         <i class="arrow-right fas fa-angle-double-right"></i>
         <article class="work__article">
           <div class="work__article-description">
-            <h2>Project Name</h2>
+            <h2>Project's Name</h2>
             <h3><i>Short Intro</i></h3>
             <p>
               Description of project. Lorem ipsum dolor, sit amet consectetur
@@ -130,8 +141,8 @@
             experience
           </h1>
         </div>
-        <article class="work__article">
-          <div class="work__article-description">
+        <article class="experience__article">
+          <div class="experience__article-description">
             <h2>Road to success</h2>
             <h3><i>Short Intro</i></h3>
             <p>
@@ -140,13 +151,78 @@
               laudantium amet esse voluptates fugiat quas nulla, necessitatibus,
               obcaecati molestias, dolorem ipsum mollitia corrupti sunt culpa.
             </p>
-            </div>
+          </div>
+
+          <!-- skills -->
+          <div class="skills-wrapper">
+            <div class="skill">Wireframing & Prototyping</div>
+            <div class="skill">Tech stack</div>
+            <div class="skill">UX/UI design</div>
+            <div class="skill">Responsive Web Design</div>
+            <div class="skill">Animated Interactions</div>
+          </div>  
+        </article>
       </section>
+
       <!-- Contact -->
-      <section class="contact"></section>
+      <section class="contact">
+        <div class="experience__heading">
+          <h1 class="page">
+            0<span class="page-no">4</span>. <br />
+            contact
+          </h1>
+        </div>
+
+        <!-- Contact form -->
+        <div class="container">
+          <div class="contact__hello col-sm-12">Say Hi</div>
+
+          <!-- Form -->
+          <form class="contact__form row" action="" onsubmit="return submitMessage(event);">
+          <!-- Full Name -->
+          <div class="col-sm-6">
+            <div class="contact__input">
+              <label for="name">Name*</label> <br />  
+              <input type="text" name="fullName" id="fullName" required>
+            </div>
+          </div>
+          <!-- Phone number -->
+          <div class="col-sm-6">
+            <div class="contact__input">
+              <label for="phone">Phone Number*</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+            </div>
+          </div>
+          <!-- Email -->
+          <div class="col-sm-12">
+            <div class="contact__input">
+              <label for="email">Email*</label><br />
+              <input type="text" name="email" id="email" required>
+            </div>
+          </div>
+          <!-- Message -->
+          <div class="col-sm-12">
+            <div class="contact__textarea">
+              <label for="message">Message*</label><br />
+              <textarea name="message" id="message" required></textarea>
+            </div>
+          </div>
+          <!-- Submit button -->
+          <div class="contact__button col-sm-12">
+            <input type="submit" />
+          </div>
+          
+        </form>
+        </div>
+        
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+      Copyright © <span id="year"></span> by Tomasz
+    </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

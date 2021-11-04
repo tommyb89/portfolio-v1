@@ -18,6 +18,26 @@
   margin-left: 25px;
 }
 
+.scroll-up {
+  position: fixed;
+  display: flex;
+  z-index: 1;
+  transform: rotate(90deg);
+  align-items: center;
+  top: 100px;
+  right: 20px;
+}
+.scroll-up__link {
+  text-decoration: none;
+  color: #eeeeee;
+}
+.scroll-up__icon {
+  transform: rotate(135deg);
+  font-size: 36px;
+  color: #4ecca3;
+  margin-right: 25px;
+}
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -67,6 +87,8 @@
   border-radius: 10px;
   float: right;
   transition: 0.2s;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 .hero__button:hover {
   box-shadow: 6px 7px #222831, 7px 8px 0 1px #4ecca3;
@@ -92,7 +114,7 @@
 }
 
 .work {
-  height: 85vh;
+  height: 90vh;
   color: #eeeeee;
   display: flex;
   flex-direction: column;
@@ -102,8 +124,8 @@
 .work__heading {
   margin-bottom: 30px;
   padding: 3px 0px 0px 7px;
-  border-top: 2px solid #4ecca3;
-  border-left: 2px solid #4ecca3;
+  border-top: 3px dotted #4ecca3;
+  border-left: 3px dotted #4ecca3;
   width: 300px;
 }
 .work__article {
@@ -116,9 +138,15 @@
   flex-direction: column;
   gap: 10px;
 }
+.work__article-description h2 {
+  text-decoration: underline;
+}
 .work__article-description h3 {
   font-style: italic;
   font-weight: 200;
+}
+.work__article-description p {
+  color: #b4b4b4;
 }
 .work__article-card {
   position: relative;
@@ -173,9 +201,74 @@
 .experience__heading {
   margin-bottom: 30px;
   padding: 3px 0px 0px 7px;
-  border-top: 2px solid #4ecca3;
-  border-left: 2px solid #4ecca3;
+  border-top: 3px dotted #4ecca3;
+  border-left: 3px dotted #4ecca3;
   width: 300px;
+}
+.experience__article {
+  display: flex;
+}
+.experience__article-description {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.experience__article-description h2 {
+  text-decoration: underline;
+}
+.experience__article-description h3 {
+  font-style: italic;
+  font-weight: 200;
+}
+.experience__article-description p {
+  color: #b4b4b4;
+}
+.experience .skills-wrapper {
+  width: 800px;
+}
+.experience .skill {
+  margin: 20px;
+  width: 300px;
+  height: 45px;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+  color: #222831;
+  border: 4px solid #4ecca3;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  float: right;
+  transition: 0.3s;
+}
+.experience .skill:hover {
+  box-shadow: 5px 6px #222831, 6px 7px 0 1px #4ecca3;
+}
+
+.contact {
+  height: 90vh;
+  color: #eeeeee;
+  margin: 0 140px;
+  position: relative;
+}
+.contact__form {
+  background-color: #eeeeee;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #222831;
+  width: 600px;
+  height: 400px;
+  display: flex;
+}
+.contact__hello {
+  text-align: center;
+  background-color: #222831;
+  color: white;
+  border: 1px solid #eeeeee;
+  width: 50%;
 }
 
 * {
@@ -188,4 +281,11 @@ body {
   background-color: #222831;
   font-family: "Roboto Mono", monospace;
   padding: 0 50px;
+}
+
+footer {
+  text-align: center;
+  color: #eeeeee;
+  font-size: 12px;
+  margin-bottom: 20px;
 }

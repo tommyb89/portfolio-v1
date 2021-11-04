@@ -1,5 +1,5 @@
 .work {
-  height: 85vh;
+  height: 90vh;
   color: $tertiary-color;
   display: flex;
   flex-direction: column;
@@ -9,8 +9,8 @@
   &__heading {
     margin-bottom: 30px;
     padding: 3px 0px 0px 7px;
-    border-top: 2px solid $secondary-color;
-    border-left: 2px solid $secondary-color;
+    border-top: 3px dotted $secondary-color;
+    border-left: 3px dotted $secondary-color;
     width: 300px;
   }
   &__article {
@@ -24,12 +24,14 @@
       gap: 10px;
     }
     &-description h2 {
+      text-decoration: underline;
     }
     &-description h3 {
       font-style: italic;
       font-weight: 200;
     }
     &-description p {
+      color: rgb(180, 180, 180);
     }
 
     &-card {
