@@ -79,6 +79,15 @@
   gap: 40px;
 }
 
+.hello {
+  text-align: center;
+  padding: 5px;
+  color: #eeeeee;
+  background-color: #222831;
+  border: 2px solid #eeeeee;
+  box-shadow: 5px 6px #4ecca3;
+}
+
 label {
   font-size: 18px;
   font-weight: 500;
@@ -114,6 +123,7 @@ input[type=submit] {
   border-radius: 5px;
   font-size: 18px;
   font-weight: 500;
+  padding: 3px;
 }
 
 input[type=submit]:active {
