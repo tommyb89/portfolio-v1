@@ -11,6 +11,10 @@
     text-decoration: none;
     color: $tertiary-color;
   }
+
+  &__link:hover {
+    color: $tertiary-color;
+  }
   &__icon {
     transform: rotate(-45deg);
     font-size: 36px;
@@ -32,6 +36,10 @@
 
   &__link {
     text-decoration: none;
+    color: $tertiary-color;
+  }
+
+  &__link:hover {
     color: $tertiary-color;
   }
   &__icon {

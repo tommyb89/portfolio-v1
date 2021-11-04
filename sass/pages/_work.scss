@@ -1,9 +1,6 @@
 .work {
-  height: 90vh;
+  height: 80vh;
   color: $tertiary-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin: 0 140px;
 
   &__heading {
@@ -11,7 +8,7 @@
     padding: 3px 0px 0px 7px;
     border-top: 3px dotted $secondary-color;
     border-left: 3px dotted $secondary-color;
-    width: 300px;
+    display: inline-block;
   }
   &__article {
     display: flex;

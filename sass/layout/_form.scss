@@ -1,0 +1,97 @@
+.contact-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  gap: 10px;
+  width: 600px;
+  height: 400px;
+  padding: 25px;
+  background-color: $tertiary-color;
+  color: $primary-color;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid $secondary-color;
+  box-shadow: 7px 8px $primary-color, 8px 9px 0 1px $secondary-color;
+
+  &__left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Form-LEFT
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 40px;
+}
+.info-item {
+}
+// Form-RIGHT
+label {
+  font-size: 18px;
+  font-weight: 500;
+}
+.input-field {
+  border: 3px solid $secondary-color;
+  box-shadow: 5px 6px $primary-color, 6px 7px 0 1px $secondary-color;
+  border-radius: 10px;
+  outline: none;
+  height: 40px;
+  margin: 5px 0 15px 0;
+  padding-left: 10px;
+}
+
+textarea {
+  border: 3px solid $secondary-color;
+  box-shadow: 5px 6px $primary-color, 6px 7px 0 1px $secondary-color;
+  border-radius: 10px;
+  outline: none;
+  margin: 5px 0 15px 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: white;
+  width: 100%;
+  border: 3px solid $secondary-color;
+  box-shadow: 5px 6px $primary-color, 6px 7px 0 1px $secondary-color;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+input[type="submit"]:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 1px $primary-color, 0px 1px $secondary-color;
+}
+
+// Social media icons
+.social-media {
+  text-align: center;
+}
+.social-media a,
+i {
+  text-decoration: none;
+  color: $primary-color;
+  transition: 0.3s;
+  font-size: 22px;
+}
+.social-media a:hover,
+i:hover {
+  color: $secondary-color;
+}

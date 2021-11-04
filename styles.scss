@@ -1,6 +1,5 @@
 @import "./sass/abstracts/_variables";
 @import "./sass/base/_typography";
-@import "./sass/components/_button";
 @import "./sass/components/scroll-down";
 @import "./sass/layout/_form";
 @import "./sass/layout/_navigation";
@@ -25,5 +24,14 @@ footer {
   text-align: center;
   color: $tertiary-color;
   font-size: 12px;
-  margin-bottom: 20px;
+  margin: 20px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
