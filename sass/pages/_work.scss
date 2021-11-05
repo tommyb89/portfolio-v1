@@ -1,7 +1,8 @@
 .work {
-  height: 80vh;
+  height: 100vh;
   color: $tertiary-color;
   margin: 0 140px;
+  padding-top: 100px;
   position: relative;
 
   &__heading {
@@ -65,8 +66,8 @@
   top: 50%;
   left: -50px;
   font-size: 30px;
-  color: $secondary-color;
-  transition: 1s;
+  color: $tertiary-color;
+  transition: 0.2s;
 }
 
 @keyframes moveLeft {
@@ -79,18 +80,20 @@
 }
 .arrow-left:hover {
   animation: moveLeft 1s infinite;
+  color: $secondary-color;
 }
 .arrow-right {
   position: absolute;
   top: 50%;
   left: 525px;
   font-size: 30px;
-  color: $secondary-color;
-  transition: 1s;
+  color: $tertiary-color;
+  transition: 0.2s;
 }
 
 .arrow-right:hover {
   animation: moveRight 1s infinite;
+  color: $secondary-color;
 }
 @keyframes moveRight {
   50% {

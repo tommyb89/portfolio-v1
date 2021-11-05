@@ -1,12 +1,13 @@
 @import "./sass/abstracts/_variables";
 @import "./sass/base/_typography";
-@import "./sass/components/scroll-down";
+@import "./sass/components/scroll";
 @import "./sass/layout/_form";
 @import "./sass/layout/_navigation";
 @import "./sass/pages/_about";
 @import "./sass/pages/_work";
 @import "./sass/pages/_experience";
 @import "./sass/pages/_contact.scss";
+@import "./sass/layout/aside.scss";
 
 * {
   margin: 0;

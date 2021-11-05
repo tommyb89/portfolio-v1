@@ -20,23 +20,23 @@
     <nav>
       <ol class="nav">
         <li class="nav__item">
-          <a class="nav__link" href="/">About.</a>
+          <a class="nav__link" href="#home">Home.</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="/">Work.</a>
+          <a class="nav__link" href="#work">Work.</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="/">Experience.</a>
+          <a class="nav__link" href="#experience">Experience.</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="/">Contact.</a>
+          <a class="nav__link" href="#contact">Contact.</a>
         </li>
       </ol>
     </nav>
 
     <!-- Header -->
 
-    <header class="hero">
+    <header id="home" class="hero">
       <section class="hero__heading">
         <h1 class="hero__heading-title">
           Hi, <br />
@@ -75,7 +75,7 @@
     <!-- Main -->
     <main>
       <!-- Work -->
-      <section class="work">
+      <section id="work" class="work">
         <!-- Scroll down -->
         <aside class="scroll-up">
           <i class="scroll-up__icon far fa-arrow-alt-circle-right fa-3"></i>
@@ -124,7 +124,7 @@
       </section>
 
       <!-- Experience -->
-      <section class="experience">
+      <section id="experience" class="experience">
         <div class="experience__heading">
           <h1 class="page">
             0<span class="page-no">3</span>. <br />
@@ -155,7 +155,7 @@
       </section>
 
       <!-- Contact -->
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="contact__heading">
           <h1 class="page">
             0<span class="page-no">4</span>. <br />
@@ -196,7 +196,7 @@
         </div>
         <div class="contact-wrapper__right">
 
-          <form action="tomasz.bielasik@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+          <form action="mailto:tomasz.bielasik@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
 
             <label class="label" for="name">Name*</label><br>
             <input class="input-field" type="text" id="name" name="name" placeholder="Your name.."><br>
@@ -205,6 +205,7 @@
             <label class="label" for="message">Message*</label> <br>
             <textarea type="submit" id="message" value="submit" name="message" placeholder="Write something.." rows="4"></textarea><br>
             <input type="submit" value="Submit" />
+
           </form>
         </div>
       </div>
@@ -217,6 +218,6 @@
       Copyright © <span id="year"></span> by Tomasz
     </footer>
 
-    <script src="index.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
