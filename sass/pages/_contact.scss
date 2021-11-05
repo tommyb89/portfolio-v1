@@ -5,11 +5,7 @@
   position: relative;
 
   &__heading {
-    margin-bottom: 30px;
-    padding: 3px 0px 0px 7px;
-    border-top: 3px dotted $secondary-color;
-    border-left: 3px dotted $secondary-color;
-    display: inline-block;
+    @include heading;
   }
 }
 
