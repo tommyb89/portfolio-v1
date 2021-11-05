@@ -87,19 +87,3 @@ input[type="submit"]:active {
   transform: translate(2px, 2px);
   box-shadow: 0px 1px $primary-color, 0px 1px $secondary-color;
 }
-
-// Social media icons
-.social-media {
-  text-align: center;
-}
-.social-media a,
-i {
-  text-decoration: none;
-  color: $primary-color;
-  transition: 0.3s;
-  font-size: 22px;
-}
-.social-media a:hover,
-i:hover {
-  color: $secondary-color;
-}

@@ -10,15 +10,18 @@
 .scroll-down__link {
   text-decoration: none;
   color: #eeeeee;
+  transition: 0.3s;
 }
 .scroll-down__link:hover {
   color: #eeeeee;
+  transform: translateX(-15px);
 }
 .scroll-down__icon {
   transform: rotate(-45deg);
   font-size: 36px;
   color: #4ecca3;
   margin-left: 25px;
+  transition: 1s;
 }
 
 .scroll-up {
@@ -33,9 +36,11 @@
 .scroll-up__link {
   text-decoration: none;
   color: #eeeeee;
+  transition: 0.3s;
 }
 .scroll-up__link:hover {
   color: #eeeeee;
+  transform: translateX(15px);
 }
 .scroll-up__icon {
   transform: rotate(135deg);
@@ -54,12 +59,12 @@
   height: 400px;
   padding: 25px;
   background-color: #eeeeee;
-  color: #222831;
+  color: #232931;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   border: 3px solid #4ecca3;
-  box-shadow: 7px 8px #222831, 8px 9px 0 1px #4ecca3;
+  box-shadow: 7px 8px #232931, 8px 9px 0 1px #4ecca3;
 }
 .contact-wrapper__left {
   width: 45%;
@@ -83,7 +88,7 @@
   text-align: center;
   padding: 5px;
   color: #eeeeee;
-  background-color: #222831;
+  background-color: #232931;
   border: 2px solid #eeeeee;
   box-shadow: 5px 6px #4ecca3;
 }
@@ -95,7 +100,7 @@ label {
 
 .input-field {
   border: 3px solid #4ecca3;
-  box-shadow: 5px 6px #222831, 6px 7px 0 1px #4ecca3;
+  box-shadow: 5px 6px #232931, 6px 7px 0 1px #4ecca3;
   border-radius: 10px;
   outline: none;
   height: 40px;
@@ -105,7 +110,7 @@ label {
 
 textarea {
   border: 3px solid #4ecca3;
-  box-shadow: 5px 6px #222831, 6px 7px 0 1px #4ecca3;
+  box-shadow: 5px 6px #232931, 6px 7px 0 1px #4ecca3;
   border-radius: 10px;
   outline: none;
   margin: 5px 0 15px 0;
@@ -119,7 +124,7 @@ input[type=submit] {
   background-color: white;
   width: 100%;
   border: 3px solid #4ecca3;
-  box-shadow: 5px 6px #222831, 6px 7px 0 1px #4ecca3;
+  box-shadow: 5px 6px #232931, 6px 7px 0 1px #4ecca3;
   border-radius: 5px;
   font-size: 18px;
   font-weight: 500;
@@ -128,24 +133,7 @@ input[type=submit] {
 
 input[type=submit]:active {
   transform: translate(2px, 2px);
-  box-shadow: 0px 1px #222831, 0px 1px #4ecca3;
-}
-
-.social-media {
-  text-align: center;
-}
-
-.social-media a,
-i {
-  text-decoration: none;
-  color: #222831;
-  transition: 0.3s;
-  font-size: 22px;
-}
-
-.social-media a:hover,
-i:hover {
-  color: #4ecca3;
+  box-shadow: 0px 1px #232931, 0px 1px #4ecca3;
 }
 
 .nav {
@@ -163,6 +151,10 @@ i:hover {
 .nav__link {
   text-decoration: none;
   color: #eeeeee;
+  transition: 0.3s;
+}
+.nav__link:hover {
+  color: #4ecca3;
 }
 
 .hero {
@@ -179,8 +171,8 @@ i:hover {
 }
 .hero__heading-name {
   font-size: 72px;
-  font-weight: 400;
-  text-shadow: 4px 4px 10px #4ecca3, 0 1px 0 #4ecca3;
+  font-weight: 500;
+  text-shadow: 4px 4px 8px #4ecca3, 0 1px 0 #4ecca3;
 }
 .hero__subheading {
   margin-top: 45px;
@@ -201,32 +193,35 @@ i:hover {
   letter-spacing: 2px;
 }
 .hero__button:hover {
-  box-shadow: 6px 7px #222831, 7px 8px 0 1px #4ecca3;
+  box-shadow: 6px 7px #232931, 7px 8px 0 1px #4ecca3;
 }
 .hero__button:active {
   transform: translate(2px, 2px);
-  box-shadow: 0px 1px #222831, 0px 1px #4ecca3;
+  box-shadow: 0px 1px #232931, 0px 1px #4ecca3;
 }
 .hero .social {
+  position: fixed;
+  left: 60px;
   display: flex;
   flex-direction: column;
   margin-right: 40px;
   align-items: center;
-  font-size: 24px;
+  font-size: 20px;
 }
 .hero .social__icon {
   margin-top: 10px;
-  color: #eeeeee;
+  color: #4ecca3;
   transition: 0.2s;
 }
 .hero .social__icon:hover {
-  color: #4ecca3;
+  color: #eeeeee;
 }
 
 .work {
   height: 80vh;
   color: #eeeeee;
   margin: 0 140px;
+  position: relative;
 }
 .work__heading {
   margin-bottom: 30px;
@@ -267,7 +262,7 @@ i:hover {
   transition: 0.2s;
 }
 .work__article-card:hover {
-  box-shadow: 6px 7px #222831, 7px 8px 0 1px #4ecca3;
+  box-shadow: 6px 7px #232931, 7px 8px 0 1px #4ecca3;
 }
 
 .page {
@@ -280,18 +275,46 @@ i:hover {
 
 .arrow-left {
   position: absolute;
-  transform: translateY(-50%);
-  left: 100px;
+  top: 50%;
+  left: -50px;
   font-size: 30px;
+  color: #4ecca3;
+  transition: 1s;
+}
+
+@keyframes moveLeft {
+  50% {
+    left: -60px;
+  }
+  100% {
+    left: -50;
+  }
+}
+.arrow-left:hover {
+  animation: moveLeft 1s infinite;
 }
 
 .arrow-right {
   position: absolute;
-  transform: translateY(-50%);
-  right: 100px;
+  top: 50%;
+  left: 525px;
   font-size: 30px;
+  color: #4ecca3;
+  transition: 1s;
 }
 
+.arrow-right:hover {
+  animation: moveRight 1s infinite;
+}
+
+@keyframes moveRight {
+  50% {
+    left: 535px;
+  }
+  100% {
+    left: 525;
+  }
+}
 .tech-stack {
   margin-top: 30px;
 }
@@ -341,7 +364,7 @@ i:hover {
   padding: 8px;
   text-align: center;
   font-size: 16px;
-  color: #222831;
+  color: #232931;
   border: 4px solid #4ecca3;
   border-radius: 10px;
   background-color: #eeeeee;
@@ -349,7 +372,7 @@ i:hover {
   transition: 0.3s;
 }
 .experience .skill:hover {
-  box-shadow: 5px 6px #222831, 6px 7px 0 1px #4ecca3;
+  box-shadow: 5px 6px #232931, 6px 7px 0 1px #4ecca3;
 }
 
 .contact {
@@ -366,6 +389,23 @@ i:hover {
   display: inline-block;
 }
 
+.social-media {
+  text-align: center;
+}
+
+.social-media a,
+.social-media i {
+  text-decoration: none;
+  color: #232931;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+.social-media a:hover,
+.social-media i:hover {
+  color: #4ecca3;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -373,7 +413,7 @@ i:hover {
 }
 
 body {
-  background-color: #222831;
+  background-color: #232931;
   font-family: "Roboto Mono", monospace;
   padding: 0 50px;
 }

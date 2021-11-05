@@ -14,5 +14,10 @@
   &__link {
     text-decoration: none;
     color: $tertiary-color;
+    transition: 0.3s;
+  }
+
+  &__link:hover {
+    color: $secondary-color;
   }
 }

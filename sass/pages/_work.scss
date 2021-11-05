@@ -2,6 +2,7 @@
   height: 80vh;
   color: $tertiary-color;
   margin: 0 140px;
+  position: relative;
 
   &__heading {
     margin-bottom: 30px;
@@ -61,17 +62,44 @@
 
 .arrow-left {
   position: absolute;
-  transform: translateY(-50%);
-  left: 100px;
+  top: 50%;
+  left: -50px;
   font-size: 30px;
+  color: $secondary-color;
+  transition: 1s;
+}
+
+@keyframes moveLeft {
+  50% {
+    left: -60px;
+  }
+  100% {
+    left: -50;
+  }
+}
+.arrow-left:hover {
+  animation: moveLeft 1s infinite;
 }
 .arrow-right {
   position: absolute;
-  transform: translateY(-50%);
-  right: 100px;
+  top: 50%;
+  left: 525px;
   font-size: 30px;
+  color: $secondary-color;
+  transition: 1s;
 }
 
+.arrow-right:hover {
+  animation: moveRight 1s infinite;
+}
+@keyframes moveRight {
+  50% {
+    left: 535px;
+  }
+  100% {
+    left: 525;
+  }
+}
 // Tech stack icons
 .tech-stack {
   margin-top: 30px;

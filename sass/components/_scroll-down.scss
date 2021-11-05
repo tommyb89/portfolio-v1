@@ -10,16 +10,19 @@
   &__link {
     text-decoration: none;
     color: $tertiary-color;
+    transition: 0.3s;
   }
 
   &__link:hover {
     color: $tertiary-color;
+    transform: translateX(-15px);
   }
   &__icon {
     transform: rotate(-45deg);
     font-size: 36px;
     color: $secondary-color;
     margin-left: 25px;
+    transition: 1s;
   }
 }
 
@@ -37,10 +40,12 @@
   &__link {
     text-decoration: none;
     color: $tertiary-color;
+    transition: 0.3s;
   }
 
   &__link:hover {
     color: $tertiary-color;
+    transform: translateX(15px);
   }
   &__icon {
     transform: rotate(135deg);

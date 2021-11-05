@@ -12,3 +12,19 @@
     display: inline-block;
   }
 }
+
+// Social media icons
+.social-media {
+  text-align: center;
+}
+.social-media a,
+.social-media i {
+  text-decoration: none;
+  color: $primary-color;
+  transition: 0.3s;
+  font-size: 22px;
+}
+.social-media a:hover,
+.social-media i:hover {
+  color: $secondary-color;
+}
