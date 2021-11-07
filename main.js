@@ -6,7 +6,7 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
   e.preventDefault();
 
   // Matching strategy
-  if (e.target.classList.contains("nav__item")) {
+  if (e.target.classList.contains("nav__link")) {
     // console.log('LINK');
     const id = e.target.getAttribute("href");
     // console.log(id);

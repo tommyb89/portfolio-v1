@@ -28,8 +28,9 @@ html {
 body {
   background-color: $primary-color;
   font-family: $primary-font;
-  padding: 0 50px;
+  padding: 0 50px 50px 50px;
   margin: 0 140px;
+  height: 100vh;
 }
 
 h1,
@@ -45,10 +46,11 @@ h6 {
 header,
 section {
   color: $tertiary-color;
-  height: 90vh;
+  height: 100vh;
 }
 
 #work,
-#experience {
+#experience,
+#contact {
   padding-top: 100px;
 }
