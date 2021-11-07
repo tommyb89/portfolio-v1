@@ -1,56 +1,50 @@
 // Scroll down
 .scroll-down {
-  position: fixed;
-  display: flex;
-  bottom: 70px;
-  left: 0px;
-  transform: rotate(90deg);
-  align-items: center;
+  position: relative;
+  top: 120px;
+  text-decoration: none;
+  color: $tertiary-color;
+  transition: 0.3s;
+  font-size: 24px;
+  color: $secondary-color;
 
-  &__link {
-    text-decoration: none;
-    color: $tertiary-color;
-    transition: 0.3s;
-  }
+  animation: bounce 1s linear infinite;
+}
 
-  &__link:hover {
-    color: $tertiary-color;
-    transform: translateX(-15px);
+@keyframes bounce {
+  50% {
+    top: 100px;
   }
-  &__icon {
-    transform: rotate(-45deg);
-    font-size: 36px;
-    color: $secondary-color;
-    margin-left: 25px;
-    transition: 1s;
+  100% {
+    top: 120px;
   }
 }
 
 // Scroll up
 
-.scroll-up {
-  position: fixed;
-  display: flex;
-  z-index: 1;
-  transform: rotate(90deg);
-  align-items: center;
-  top: 100px;
-  right: 20px;
+// .scroll-up {
+//   position: fixed;
+//   display: flex;
+//   z-index: 1;
+//   transform: rotate(90deg);
+//   align-items: center;
+//   top: 100px;
+//   right: 20px;
 
-  &__link {
-    text-decoration: none;
-    color: $tertiary-color;
-    transition: 0.3s;
-  }
+//   &__link {
+//     text-decoration: none;
+//     color: $tertiary-color;
+//     transition: 0.3s;
+//   }
 
-  &__link:hover {
-    color: $tertiary-color;
-    transform: translateX(15px);
-  }
-  &__icon {
-    transform: rotate(135deg);
-    font-size: 36px;
-    color: $secondary-color;
-    margin-right: 25px;
-  }
-}
+//   &__link:hover {
+//     color: $tertiary-color;
+//     transform: translateX(15px);
+//   }
+//   &__icon {
+//     transform: rotate(135deg);
+//     font-size: 36px;
+//     color: $secondary-color;
+//     margin-right: 25px;
+//   }
+// }

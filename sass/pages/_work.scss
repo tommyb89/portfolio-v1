@@ -1,12 +1,10 @@
 .work {
-  height: 100vh;
-  color: $tertiary-color;
-  margin: 0 140px;
-  padding-top: 100px;
   position: relative;
-
   &__heading {
     @include heading;
+    &__num {
+      color: $secondary-color;
+    }
   }
   &__article {
     display: flex;
@@ -44,14 +42,6 @@
     &-card:hover {
       box-shadow: 6px 7px $primary-color, 7px 8px 0 1px $secondary-color;
     }
-  }
-}
-
-.page {
-  display: inline;
-  font-size: 44px;
-  &-no {
-    color: $secondary-color;
   }
 }
 

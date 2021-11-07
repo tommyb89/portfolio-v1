@@ -1,11 +1,11 @@
 .contact {
-  height: 85vh;
-  color: $tertiary-color;
-  margin: 0 140px;
   position: relative;
 
   &__heading {
     @include heading;
+    &__num {
+      color: $secondary-color;
+    }
   }
 }
 

@@ -16,78 +16,58 @@
     <title>Tomasz Bielasik Personal Portfolio</title>
   </head>
   <body>
+
     <!-- Navigation -->
-    <nav>
-      <ol class="nav">
-        <li class="nav__item">
-          <a class="nav__link" href="#home">Home.</a>
+    <nav class="nav">
+      <ol class="nav__links">
+        <li class="nav__link-hidden">
+          <a class="nav__item" href="">Home.</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#work">Work.</a>
+        <li class="nav__link">
+          <a class="nav__item" href="#work">Work.</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#experience">Experience.</a>
+        <li class="nav__link">
+          <a class="nav__item" href="#experience">Experience.</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#contact">Contact.</a>
+        <li class="nav__link">
+          <a class="nav__item" href="#contact">Contact.</a>
         </li>
       </ol>
     </nav>
 
     <!-- Header -->
-
     <header id="home" class="hero">
-      <section class="hero__heading">
-        <h1 class="hero__heading-title">
-          Hi, <br />
-          I'm <span class="hero__heading-name">Tomasz</span><br />
-          web designer
+        <h1 class="hero__heading">
+          Hi, I'm <span class="hero__name focus-in-expand">Tomasz</span><br />
+          web developer
         </h1>
         <p class="hero__subheading">
           I design beautiful and interactive websites.
         </p>
-        <button class="hero__button">Get in touch!</button>
-      </section>
-      <aside class="social">
-        <a href="https://www.linkedin.com/in/tomasz-bielasik-a33749193"
-          ><i class="social__icon fa-brands fa-linkedin-in"></i
-        ></a>
-        <a href="https://github.com/tommyb89">
-          <i class="social__icon fa-brands fa-github"></i
-        ></a>
-        <a href="https://codepen.io/Bielasik">
-          <i class="social__icon fa-brands fa-codepen"></i
-        ></a>
-        <a href="https://www.instagram.com/tommys_lens/">
-          <i class="social__icon fa-brands fa-instagram"></i
-        ></a>
-
-        <i class="social__icon fa-solid fa-file-arrow-down"></i>
-      </aside>
+        <a href="#contact" class="hero__button">Get in touch!</a>
+        <!-- Scroll down -->
+        <a class="scroll-down fas fa-angle-double-down" href="#work"></a>
     </header>
 
-    <!-- Scroll down -->
-    <aside class="scroll-down">
-      <a class="scroll-down__link" href="#work">see more</a>
-      <i class="scroll-down__icon far fa-arrow-alt-circle-right fa-3"></i>
-    </aside>
+     
+    
+    <!-- Sidebar -->
+      <aside class="social">
+        <a title="Linkedin" href="https://www.linkedin.com/in/tomasz-bielasik-a33749193" class="social__icon fa-brands fa-linkedin-in"></a>
+        <a title="Github" href="https://github.com/tommyb89" class="social__icon fa-brands fa-github"></a>
+        <a title="Codepen" href="https://codepen.io/Bielasik" class="social__icon fa-brands fa-codepen"></a>
+        <a title="Instagram" href="https://www.instagram.com/tommys_lens/" class="social__icon fa-brands fa-instagram"></a>
+        <a title="Resume" href=""class="social__icon fa-solid fa-file-arrow-down" download></a>
+      </aside>
 
     <!-- Main -->
     <main>
       <!-- Work -->
       <section id="work" class="work">
-        <!-- Scroll down -->
-        <aside class="scroll-up">
-          <i class="scroll-up__icon far fa-arrow-alt-circle-right fa-3"></i>
-          <a class="scroll-up__link" href="#work">go back</a>
-          
-        </aside>
-        <div class="work__heading">
-          <h1 class="page">
-            0<span class="page-no">2</span>. <br />
+          <h1 class="work__heading">
+            0<span class="work__heading__num">1</span>. <br />
             my work
           </h1>
-        </div>
         <i class="arrow-left fas fa-angle-double-left"></i>
         <i class="arrow-right fas fa-angle-double-right"></i>
         <article class="work__article">
@@ -125,14 +105,12 @@
 
       <!-- Experience -->
       <section id="experience" class="experience">
-        <div class="experience__heading">
-          <h1 class="page">
-            0<span class="page-no">3</span>. <br />
+          <h1 class="experience__heading">
+            0<span class="experience__heading__num">2</span>. <br />
             experience
           </h1>
-        </div>
         <article class="experience__article">
-          <div class="experience__article-description">
+          <div class="experience__description">
             <h2>Road to success</h2>
             <h3><i>Short Intro</i></h3>
             <p>
@@ -145,23 +123,21 @@
 
           <!-- Skills -->
           <div class="skills-wrapper">
-            <div class="skill">Wireframing & Prototyping</div>
-            <div class="skill">Tech stack</div>
-            <div class="skill">UX/UI design</div>
-            <div class="skill">Responsive Web Design</div>
-            <div class="skill">Animated Interactions</div>
+            <div class="skills-wrapper__skill">Wireframing & Prototyping</div>
+            <div class="skills-wrapper__skill">Tech stack</div>
+            <div class="skills-wrapper__skill">UX/UI design</div>
+            <div class="skills-wrapper__skill">Responsive Web Design</div>
+            <div class="skills-wrapper__skill">Animated Interactions</div>
           </div>  
         </article>
       </section>
 
       <!-- Contact -->
       <section id="contact" class="contact">
-        <div class="contact__heading">
-          <h1 class="page">
-            0<span class="page-no">4</span>. <br />
+          <h1 class="contact__heading">
+            0<span class="contact__heading__num">3</span>. <br />
             contact
           </h1>
-        </div>
       <!-- Form -->
       <div class="contact-wrapper">
         

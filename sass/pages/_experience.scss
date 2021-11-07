@@ -1,38 +1,37 @@
 .experience {
-  height: 100vh;
-  color: $tertiary-color;
-  margin: 0 140px;
-  padding-top: 100px;
-
   &__heading {
     @include heading;
+    &__num {
+      color: $secondary-color;
+    }
   }
+
   &__article {
     display: flex;
-
-    &-description {
-      width: 500px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    &-description h2 {
-      text-decoration: underline;
-    }
-    &-description h3 {
-      font-style: italic;
-      font-weight: 200;
-    }
-    &-description p {
-      color: rgb(180, 180, 180);
-    }
   }
 
-  .skills-wrapper {
-    width: 800px;
+  &__description {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
+  &__description h2 {
+    text-decoration: underline;
+  }
+  &__description h3 {
+    font-style: italic;
+    font-weight: 200;
+  }
+  &__description p {
+    color: rgb(180, 180, 180);
+  }
+}
 
-  .skill {
+.skills-wrapper {
+  width: 800px;
+
+  &__skill {
     margin: 20px;
     width: 300px;
     height: 45px;
@@ -45,9 +44,9 @@
     background-color: $tertiary-color;
     float: right;
     transition: 0.3s;
-  }
 
-  .skill:hover {
-    box-shadow: 5px 6px $primary-color, 6px 7px 0 1px $secondary-color;
+    &:hover {
+      box-shadow: 5px 6px $primary-color, 6px 7px 0 1px $secondary-color;
+    }
   }
 }

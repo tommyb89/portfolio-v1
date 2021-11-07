@@ -1,23 +1,52 @@
 .nav {
+  position: relative;
+  right: -150px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 10vh;
 
-  &__item {
+  &__links {
+    display: flex;
     list-style: none;
-    margin: 0 50px;
     list-style-type: decimal-leading-zero;
     color: $secondary-color;
   }
 
   &__link {
+    list-style: none;
+    margin: 0 50px;
+    list-style-type: decimal-leading-zero;
+    color: $secondary-color;
+    &-hidden {
+      display: none;
+    }
+  }
+
+  &__item {
     text-decoration: none;
     color: $tertiary-color;
     transition: 0.3s;
-  }
+    position: relative;
 
-  &__link:hover {
-    color: $secondary-color;
+    &::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: $tertiary-color;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      color: $secondary-color;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
   }
 }

@@ -2,11 +2,11 @@
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
 // Scrolling functionality
-document.querySelector(".nav").addEventListener("click", function (e) {
+document.querySelector(".nav__links").addEventListener("click", function (e) {
   e.preventDefault();
 
   // Matching strategy
-  if (e.target.classList.contains("nav__link")) {
+  if (e.target.classList.contains("nav__item")) {
     // console.log('LINK');
     const id = e.target.getAttribute("href");
     // console.log(id);
