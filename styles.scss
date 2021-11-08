@@ -43,7 +43,10 @@ h6 {
   padding: 0;
 }
 
-header,
+header {
+  height: 90vh;
+  color: $tertiary-color;
+}
 section {
   color: $tertiary-color;
   height: 100vh;

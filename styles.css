@@ -475,7 +475,11 @@ h6 {
   padding: 0;
 }
 
-header,
+header {
+  height: 90vh;
+  color: #eeeeee;
+}
+
 section {
   color: #eeeeee;
   height: 100vh;
