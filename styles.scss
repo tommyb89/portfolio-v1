@@ -1,59 +1,19 @@
 // Abstracts
-@import "./sass/abstracts/_variables";
+@import "./sass/abstracts/variables";
 @import "./sass/abstracts/mixins";
 // Base
-@import "./sass/base/_typography";
+@import "./sass/base/typography";
+@import "./sass/base/reset";
 // Components
 // @import "./sass/components/carousel";
 @import "./sass/components/scroll";
 // Layout
 @import "./sass/layout/header";
-@import "./sass/layout/_navigation";
-@import "./sass/layout/_footer";
-@import "./sass/layout/_sidebar";
-@import "./sass/layout/_forms";
+@import "./sass/layout/navigation";
+@import "./sass/layout/footer";
+@import "./sass/layout/sidebar";
+@import "./sass/layout/forms";
 // Pages
-@import "./sass/pages/_work";
-@import "./sass/pages/_experience";
-@import "./sass/pages/_contact";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  background-color: $primary-color;
-  font-family: $primary-font;
-  padding: 0 50px 50px 50px;
-  margin: 0 140px;
-  height: 100vh;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  height: 90vh;
-  color: $tertiary-color;
-}
-section {
-  color: $tertiary-color;
-  height: 100vh;
-}
-
-#work,
-#experience,
-#contact {
-  padding-top: 100px;
-}
+@import "./sass/pages/work";
+@import "./sass/pages/experience";
+@import "./sass/pages/contact";
